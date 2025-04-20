@@ -1,0 +1,17 @@
+{
+    "name": "Laravel DevContainer",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "apache",
+    "workspaceFolder": "/var/www/html",
+    "forwardPorts": [80, 3306, 6379, 9003],
+    "features": {},
+    "postCreateCommand": "composer create-project laravel/laravel . || true",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "bmewburn.vscode-intelephense-client",
+          "xdebug.php-debug"
+        ]
+      }
+    }
+ }
