@@ -13,14 +13,19 @@ First start:
 
 - open new terminal window in vscode in container
 
-- change access to:
+- change access:
 
-- chmod -R 755 /var/www/html
+  - chmod -R 755 /var/www/html
   
-- chown -R www-data:www-data /var/www/html
+  - chown -R www-data:www-data /var/www/html
   
-- chmod -R 775 storage bootstrap/cache
+  - chmod -R 775 storage bootstrap/cache
   
 - in vscode press F1 and Rebuild Container
 
+after all, press ReOpen Container and then press F5 for debugging
+
+go to ./src/routes/web.php and set breakpoint on line 6
+
+open browser with http://localhost and breakpoint should hit!
 
