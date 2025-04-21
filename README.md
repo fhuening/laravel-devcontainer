@@ -31,12 +31,15 @@ open browser with http://localhost and breakpoint should hit!
 last step, edit laravel .env file
 
 ```
-DB_HOST=127.0.0.1
+DB_CONNECTION=mysql
+DB_HOST=mysql
 DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
-DB_PASSWORD=root   # oder was du vergeben hast
+DB_PASSWORD=root
 
-REDIS_HOST=127.0.0.1
+REDIS_CLIENT=phpredis
+REDIS_HOST=redis
+REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```
