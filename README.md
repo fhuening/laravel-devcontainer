@@ -19,16 +19,9 @@ chmod -R 755 /var/www/html
 chown -R www-data:www-data /var/www/html
 chmod -R 775 storage bootstrap/cache
 ```
-  
-- in vscode press F1 and Rebuild Container
 
-after all, press ReOpen Container and then press F5 for debugging
-
-go to ./src/routes/web.php and set breakpoint on line 6
-
-open browser with http://localhost and breakpoint should hit!
-
-last step, edit laravel .env file
+Last step:
+- edit your laravel .env file:
 
 ```
 DB_CONNECTION=mysql
@@ -43,3 +36,13 @@ REDIS_HOST=redis
 REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```
+
+Now in vscode press F1 and Rebuild Container
+
+Go to ./src/routes/web.php and set breakpoint on line 6
+
+After that, press ReOpen Container and then press F5 for debugging
+
+Open browser with http://localhost and now the breakpoint should hit!
+
+
